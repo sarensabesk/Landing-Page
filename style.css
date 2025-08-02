@@ -1,5 +1,41 @@
-.tophead{
-    display: flexbox;
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.firsttext{
+
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    
+    
+}
+
+.first{
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex: 1;
 }
