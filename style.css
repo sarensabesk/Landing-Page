@@ -1,15 +1,41 @@
+@font-face {
+    font-family: 'Roboto' ;
+    src: url(Font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
 body{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+.main{
+    flex-grow: 1;
+    font-family:'Roboto', sans-serif;
+}
+
+.hero{
+    
+    background-color: #1f2937 ;
+    padding-bottom: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .navbar{
-    height: 12%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    
+}
+
+.head{
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 ul{
@@ -19,41 +45,71 @@ ul{
     margin: 0;
     padding: 0;
     text-decoration: none;
+    padding-top: 5px;
+   
+
 }
 
 a{
+    font-size: 18px;
     text-decoration: none;
-    color: black;
-}
-
-.firsttext{
-
-   
-    margin-left: 200px;
-    margin-bottom: 100px;
-    
-    
+    color: #e5e7eb;
 }
 
 .start{
-    margin-top: 100px;
+    
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex: 1;
-    gap: 15px;
+    gap: 123px;
 }
 
+h1{
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+.red{
+    color: rgba(187, 17, 17, 0.986);
+}
+.red:hover{
+    text-shadow: 0 0 10px #ffffffaa;
+    transition: text-shadow 0.3s;
+}
+
+.bodyone{
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-top: -20px;
+}
+
+.buttonone{
+  background-color: #1f2937; /* Dark blue-gray to match the background */
+  color: white;
+  padding: 8px 18px;
+  border: 1px solid #ffffff44; /* Light border for contrast */
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttonone:hover
+{
+    background-color: #374151; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Subtle hover effect */
+}
 .imageone{
+    border: 1px solid #f9faf8;
     width: 450px;
-    height: 250px;
+    height: 300px;
 }   
 
 h3{
     text-align: center;
-}
-
-.middle{
-    
 }
 
 .flexmiddle{
@@ -83,4 +139,22 @@ img{
 
 .quotename{
     text-align: center;
+}
+
+.popupblock{
+    display: block;
+}
+
+.popup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer{
+   display: flex;
+   justify-self: end;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Roboto', sans-serif;
 }
