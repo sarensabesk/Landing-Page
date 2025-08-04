@@ -7,7 +7,7 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 120vh;
     margin: 0;
     
 }
@@ -108,20 +108,30 @@ h1{
     height: 300px;
 }   
 
+.middlee{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
 h3{
     text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .flexmiddle{
     display:flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
    
 }
 
 img{
-    height: 110px;
-    width: 110px;
+    border:#374151 solid 3px;
+    border-radius: 8px;
+    height: 170px;
+    width: 215px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,27 +139,91 @@ img{
 .item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    width: 215px;
+    color:#1f2937;
 }
 
+.quote-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 30vh;     
+    background-color:#e5e7eb;    
+}
 
 .quote{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:980px;
+    justify-content: center;
+    align-items: center;
+    
+}
+em{
+    color: #1f2937;
+    font-size: 36px;
+    
 }
 
 .quotename{
-    text-align: center;
+   font-size: 30px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-left: 53vh;
+    margin-top: -20px;
+}
+
+
+
+h4{
+    
+    font-size: 20px;
+}
+
+.bottom{
+    margin-top: -20px;
+    font-size: 13px;
+   
 }
 
 .popupblock{
-    display: block;
+    flex:1
 }
 
 .popup{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex; /* makes it a horizontal flex container */
+    justify-content: space-between; /* pushes text left, button right */
+    align-items: center; /* aligns everything vertically */
+    
+    color: white;
+    background-color: #1f2937;
+    height: auto; /* let it grow based on content */
+    margin: 55px 270px;
+    padding: 20px 80px;
+    border-radius: 8px;
+    
 }
+
+.signbutton{
+  background-color: #1f2937;
+  color: white;
+  padding: 8px 18px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.signbutton:hover
+{
+  background-color: #374151; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
 
 footer{
    display: flex;
@@ -157,4 +231,7 @@ footer{
    align-items: center;
    justify-content: center;
    font-family: 'Roboto', sans-serif;
+   background-color: #1f2937;
+   color: white;
+   height: 4vh;
 }
